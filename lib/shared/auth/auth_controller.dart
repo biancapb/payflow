@@ -9,7 +9,7 @@ class AuthController {
 
   void setUser(BuildContext context, UserModel? user) {
     if (user != null) {
-      //saveUser(user);
+      saveUser(user);
       _user = user;
       Navigator.pushReplacementNamed(context, "/home"); //navega para a home
     } else {
