@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                 )),
             GestureDetector(
               onTap: () {
-                print("clicou");
+                Navigator.pushNamed(context, "/barcode_scanner");
               },
               child: Container(
                   width: 56,
@@ -78,12 +78,10 @@ class _HomePageState extends State<HomePage> {
                   decoration: BoxDecoration(
                       color: AppColors.primary,
                       borderRadius: BorderRadius.circular(5)),
-                  child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.add_box_outlined,
-                        color: AppColors.background,
-                      ))),
+                  child: Icon(
+                    Icons.add_box_outlined,
+                    color: AppColors.background,
+                  )),
             ),
             IconButton(
                 onPressed: () {
